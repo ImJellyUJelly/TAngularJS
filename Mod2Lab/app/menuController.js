@@ -9,8 +9,8 @@ app.controller('menuController', [
             }
         });
 
-        $scope.changeMainDish = function (item) {
-            $scope.model.mainDish = item;
+        $scope.changeMainDish = function (namerino, pricerino) {
+            $scope.model.mainDish = { name:namerino, price:pricerino };
         }
         
     }
